@@ -7,10 +7,12 @@ void setup(){
 	background(0);
 	strokeWeight(1);	
 	size(600,600);
+	stars();
 }
 
 void draw(){
-	fill(15, 15, 15);
+	strokeWeight(1);
+	fill(0);
 	ellipse(300, 0, 100, 100);
 	stroke((int)(Math.random()*255) + 100,(int)(Math.random()*255) + 100,(int)(Math.random()*255) + 100);
 	while(endX < 600){
@@ -29,3 +31,12 @@ void mousePressed(){
 	endY = 0;
 }
 
+void stars(){
+	for(int starX = 0; starX < 610; starX = starX + 20){
+		for(int starY = 0; starY < 610; starY = starY + 20){
+		stroke((int)(Math.random()*255) + 100,(int)(Math.random()*255) + 100,(int)(Math.random()*255) + 100);	
+		strokeWeight(5);
+		point(starX, starY);
+		}
+	}
+}
