@@ -34,7 +34,7 @@ void mousePressed(){
 void stars(){
 	for(int starX = 0; starX < 610; starX = starX + 20){
 		for(int starY = 0; starY < 610; starY = starY + 20){
-		stroke((int)(Math.random()*255) + 100,(int)(Math.random()*255) + 100,(int)(Math.random()*255) + 100);	
+		stroke(255, 153, 153);	
 		strokeWeight(5);
 		point(starX, starY);
 		}
